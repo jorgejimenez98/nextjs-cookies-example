@@ -1,11 +1,10 @@
-import { Inter } from '@next/font/google'
+import { FC } from 'react'
+import { Layout } from '../components/layouts'
 
-const inter = Inter({ subsets: ['latin'] })
-
-export default function Home() {
-  return (
-    <>
-      <h1>Cookies Master</h1>
-    </>
-  )
+const Home: FC = () =>{
+  return <Layout>
+    <h1>Cookie Master</h1>
+  </Layout>
 }
+
+export default Home
