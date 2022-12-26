@@ -23,7 +23,6 @@ const ThemeChangerPage: FC<{ theme: string }> = ({ theme }) =>{
 
   const handleCLick = async () => {
     const { data } = await axios.get('/api/hello')
-    console.log(data)
   }
 
   return <Layout>
